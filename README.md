@@ -5,7 +5,7 @@ This service helps recognize users as the same person even if they’ve signed u
 What This Project Does
 Users sometimes register with only email, only phone, or both—but with different details. This backend checks if the user already exists using email or phone, and links them under one primary contact, while others become secondary.
 
-* Tech Stack I Used
+* Tech Stack I Used - 
 Node.js + Express for backend
 Supabase (PostgreSQL) as database
 SQL triggers + Row Level Security for data consistency and security
