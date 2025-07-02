@@ -5,25 +5,24 @@ This service helps recognize users as the same person even if they’ve signed u
 What This Project Does
 Users sometimes register with only email, only phone, or both—but with different details. This backend checks if the user already exists using email or phone, and links them under one primary contact, while others become secondary.
 
-Tech Stack
+* Tech Stack I Used
 Node.js + Express for backend
 Supabase (PostgreSQL) as database
 SQL triggers + Row Level Security for data consistency and security
 
 How I Built It
 1. Supabase Setup
-Created a project and ran my Sql.sql script
-Made a contacts table with indexes
-Enabled RLS and added secure access policies
+- Created a project and ran my Sql.sql script
+- Made a contacts table with indexes
+- Enabled RLS and added secure access policies
 
 2. Environment Setup
 Used .env file to store Supabase URL, keys, DB string, and some server configs
 
 3. API Development
 Built one main API:
-
 bash
-POST /api/identify
+- POST /api/identify
 It checks if the contact already exists (by email or phone). If found, it links them. If not, it creates a new one.
 
 How to Run This Project
